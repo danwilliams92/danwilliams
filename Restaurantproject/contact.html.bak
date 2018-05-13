@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Pierre's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="navcontainer" id="navbar">
+			<div class="logo"><a href="index.html">Pierre's</a></div>
+			
+			<div class="nav-items">
+				<ul>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="contact.html" class="current">Contact</a></li> 
+					<li><a href="courses.html">Courses</a></li> 
+					<li><a href="aboutpage.html">About</a></li> 
+				</ul>
+			</div>
+		</div>
+	</header>
+	<h1 class="pageheading">Reserve a Table</h1>
+		<form>
+			Full name*:<br>
+			<input type="text" name="firstname" required><br>
+			Phone number*:<br>
+			<input type="text" name="phonenumber" required><br>
+		
+			Number of guests*:<br>
+			<select name="guestNumber" required>
+				<option value="1">1</option>
+				<option value="2" selected>2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7+">7+</option>
+			</select>
+			<br>
+			Date*:<br>
+			<input type="date" name="date" required><br>
+			Time*:<br>
+			<select name="hourslot" required>
+				<option value="12" selected>12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+			</select>
+			<select name="minuteslot" required>
+				<option value="00" selected>00</option>
+				<option value="00">15</option>
+				<option value="00">30</option>
+				<option value="00">45</option>
+			</select>
+			<br>
+			Any dietary/allergy requirements:<br>
+				<textarea name="message" rows="10" cols="20">
+				</textarea>
+				<br>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			<br>
+			* = Required fields
+		</form> 
+	
+	
+	
+			<div class="socialmediabuttons">
+	<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	</div>
+	
+	<div class="contactdetails">
+		<div class="boxitem"><i class="fa fa-phone"></i> 01633 888788</div>
+		<div class="boxitem"><i class="fa fa-envelope"></i> pierres@gmail.com</div>
+	</div>
+	
+	<footer>
+		<a href="#">About us |</a>
+		<a href="#">Contact us |</a>
+		<a href="#">Terms and conditions |</a>
+		<a href="#">Copyright |</a>
+	</footer>
+	
+	<script src="js/main.js"></script>
+	</body>
+	
+	</html>

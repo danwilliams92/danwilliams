@@ -1,0 +1,277 @@
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+
+
+/* The side navigation menu */
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition:.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+	text-decoration:none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+a.active{
+	color:#fff;
+}
+
+#menubutton{
+	margin-top:10px;
+	font-size:1.5em;
+	border-left: 5px solid #333;
+	border-right: 5px solid #333;
+	border-top:none;
+	border-bottom:none;
+	background-color:#fff;
+	padding:20px;
+	transition:0.5s ease;
+	}
+	
+#menubutton:hover{
+	border-top: 5px solid #333;
+	border-bottom: 5px solid #333;
+	border-left:none;
+	border-right:none;
+	transition:0.5s ease;
+	
+}
+
+/* Page content */
+#main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  background: #fff;
+  color:#111;
+  font-family: 'EB Garamond', serif;
+
+
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+a.socialmediabutton{
+	text-decoration:none;
+	color:#000;
+}
+
+.socialmediabutton:hover{
+	opacity:0.3;
+}
+
+i{
+	padding:20px;
+	color:#000;
+}
+
+#socialmediabuttons{
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+
+}
+
+span#brand{
+  display:inline-block;
+  position: relative;  
+}
+
+span#brand::before,
+span#brand::after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #000;
+  top: 0;
+  max-width:100%;
+  width: 100vw;
+}
+
+span#brand::before {
+  right: 100%;
+  margin-right: 15px;
+  padding-top:20px;
+}
+
+span#brand::after {
+  left: 100%;
+  margin-left: 15px;
+  padding-top:20px;
+}
+
+#first-box{
+	height:80vh;
+}
+
+
+#opening-headline, #myface{
+	animation-name:fadein;
+	animation-duration:3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity:0; 
+  }
+
+  to {
+    opacity:1;
+  }
+}
+
+#homepage-button{
+	font-size:2em;
+	color:#000;
+	text-decoration:none;
+	border:5px solid #000;
+	padding:10px 24px;
+	transition:0.5s;
+	animation-duration:2s;
+	animation-name:slidein;
+	overflow:hidden;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+#homepage-button:hover{
+	box-shadow: 10px 10px 38px 4px rgba(0,0,0,0.75);
+	transition:0.5s;
+}
+
+
+
+/* About Page Styles */
+
+.secondary-header{
+	/* text-decoration: underline #111; */
+	color:#111;
+	border-bottom: 3px solid #111;
+	width:25%;
+	margin:auto;
+	padding-bottom:5px;
+}
+
+#core-skills-container ul{
+	color:#000;
+}
+
+.skills-list, .portfolio-card {
+	border: 2px solid #333;
+	border-radius: 5px;
+	margin-top:5px;
+}
+
+#process-list li{
+	list-style-image: url('../images/guitar.png');
+	margin:10px;
+}
+
+/* Portfolio page */
+
+/* .portfolio-card{
+	background-color:#fff;
+	color:#000;
+	border: 2px solid #f4f4f4;
+} */
+
+a.portfolio-button{
+	background-color:#CF6161;
+	color:#fff;
+	border:2px solid #CF6161;
+	transition:0.5s;
+}
+
+a.portfolio-button:hover{
+	background-color:#FF7474;
+	color:#222;
+	border:2px solid #FF7474;
+	transition:0.5s;
+}
+
+.portfolio-text{
+	border-bottom: 3px solid #333;
+}
+
+.portfolio-header{
+	color:#111;
+	font-weight:570;
+}
+
+/* Contact Page */
+
+span.email-address{
+	font-style:italic;
+	
+}
+
+#contact-form{
+	width:75vw;
+	margin:auto;
+	border: 3px solid #000;
+	padding:1.5em;
+}
+
+#submit-button{
+	width:60%;
+	color:#fff;
+	background-color:#000;
+	border:none;
+}
+
+#reset-button{
+	width:38%;
+}
+
+@media only screen and (max-width: 768px) {
+	.sidenav{
+		width:0px;
+	}
+	#main{
+		margin-left:0px;
+	}
+	
+}

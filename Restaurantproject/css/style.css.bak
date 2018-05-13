@@ -1,0 +1,545 @@
+/* General mobile styles */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900i');
+
+
+
+body{
+	color:#fff;
+	background-color:#000;
+	font-size:16px;
+	font-family:arial;
+	
+}
+
+/* navigate back to portfolio page */
+
+.back-to-main{
+		width:100vw;
+		text-align:center;
+		background-color:#B8B7B7;
+}
+
+.back-to-main a {
+	color:#fff;
+	text-decoration:none;
+	font-size:1.5em;
+}
+
+/* end */
+
+.logo, .nav-items{
+	font-family: 'Dancing Script', cursive;
+	font-size:18px;
+	
+}
+.navcontainer{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* sticky for navbar, added with JS */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+		background-color:#000;
+}
+
+
+.nav-items ul{
+	display:flex;
+	flex-direction:row;
+}
+
+.nav-items li{
+	list-style:none;
+	margin:6px;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+}
+
+a.current{
+	color:#ec0b0b;
+}
+
+img{
+	max-width:100%;
+	width:auto;
+	margin-bottom:10px;
+}
+
+.pageheading, .subheading, .textcontent{
+	text-align:center;
+}
+
+.subheading, .subsubheading{
+	font-family:'Dancing Script', cursive;
+}
+
+.subsubheading{
+	text-align:left;
+}
+
+#homepage-wrapper{
+	width:80vw;
+	margin:auto;
+}
+
+
+.maincontainer{
+	  position: relative;
+    text-align: center;
+}
+
+.image-content{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size:30px;
+	font-size:2.5vw;
+}
+
+.main-image{
+	opacity:0.4;
+}
+
+.button{
+	display:block;
+	margin:auto;
+	font-size:16px;
+	background-color:#000;
+	color:#fff;
+	border:none;
+	margin-top:10px;
+	padding: 10px 15px;
+}
+
+a .button:hover{
+	box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.socialmediabuttons{
+	display:flex;
+	justify-content:center;
+}
+
+.socialmediabuttons i{
+	margin:8px;
+}
+
+.socialmediabuttons a:hover{
+	opacity:0.4;
+}
+
+.contactdetails{
+	display:flex;
+	justify-content:space-between;
+	font-size:12px;
+	margin:10px;
+}
+
+
+
+span.fancyfont{
+	font-family:'Dancing Script', cursive;
+	font-size:20px;
+	text-align:center;
+
+}
+
+/* courses page */
+
+.card{
+	text-align:center;
+	border:1px solid #fff;
+	margin-bottom: 10px;
+	padding:10px;
+}
+
+.cardwrapper{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+.buttonalternate{
+	font-size:16px;
+	background-color:#000;
+	color:#fff;
+	border:2px solid #fff;
+	margin-top:10px;
+	padding: 10px 15px;
+}
+
+a .buttonalternate:hover{
+	background-color:#fff;
+	color:#000;
+}
+
+.moredetails{
+	text-align:left;
+	margin-top:10px;
+	padding:10px;
+	border-top:1px solid #fff;
+}
+
+.coursedate{
+		font-size:18px;
+		color:#ec0b0b;
+		margin-top:5px;
+}
+
+.coursenote{
+	font-weight:bold;
+	font-family: 'Lato', sans-serif;
+	margin:15px;
+}
+
+
+footer{
+	font-size:10px;
+	text-align:center;
+}
+
+footer a:active{
+	color:#ec0b0b;
+}
+
+footer a:hover{
+	color:#ec0b0b;
+}
+
+/* About page */
+
+iframe{
+	max-width:100%;
+	width:75vw;
+	width:50vw;
+	margin-bottom: 10px;
+}
+
+.restaurantmap{
+	text-align:center;
+}
+
+.textcontent{
+		width:50vw;
+		text-align:center;
+		margin:auto;
+}
+
+#openinghourslist li{
+	list-style-type:none;
+}
+
+
+/* contact page */
+
+form{
+	border: 1px solid #fff;
+	padding:15px;
+	border-radius:2px;
+	margin-bottom:10px;
+}
+
+input, select, textarea{
+	margin:5px 0px 5px 0px;
+}
+
+input, textarea{
+	width:100%;
+}
+
+select{
+	width:40%;
+}
+
+
+#submitbtn{
+	font-size:18px;
+	padding:10px 20px;
+	margin-bottom:10px;
+	color:#000;
+	background-color:#fff;
+	border: 1px solid #000;
+}
+
+#resetbtn{
+	padding:10px 10px;
+	margin-bottom:10px;
+	color:#000;
+	background-color:#ec0b0b;
+	border:none;
+}
+
+/* menu page */
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden; 
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+	font-size:1em;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display:none;
+	padding: 6px 12px;
+    border: 3px solid #ccc;
+    border-top: none;
+}
+
+.course-group{
+	margin:20px;
+}
+
+.menu-list li, .carte-menu-list li, .wine-list li{
+	list-style-type:none;
+	margin-bottom:5px;
+}
+
+.carte-menu-list li{
+	margin-bottom:15px;
+}
+
+span.beverage, .pageheading, .menu-list li, .carte-menu-list li .tab button{
+	font-family: 'Lato', italic, sans-serif;
+}
+
+.menusubheader{
+	color:#ec0b0b;
+}
+
+.menuheader{
+	font-family: 'Dancing Script', cursive;
+}
+
+.tabwrapper{
+	text-align:center;
+}
+
+img.menuimage{
+	margin-top:10px;
+	width:100%;
+	height:30%;
+}
+
+
+
+
+/* 
+#menupagecontainer{
+	background:url("../images/image10.jpeg") no-repeat center;
+	background-size:cover;
+}
+
+/*
+.contentshortcuts{
+	text-align:center;
+}
+
+.contentshortcuts ul{
+	display:flex;
+	flex-direction:row;
+}
+
+.contentshortcuts ul{
+	list-style:none;
+}
+
+.contentshortcuts li{
+	padding:8px;
+	
+}
+
+.contentshortcuts li a{
+	text-decoration:none;
+}
+
+.contentshortcuts li a:hover, .contentshortcuts li a:active{
+	color:#ec0b0b;
+}
+
+
+.menucontainer{
+	padding:10px;
+	border:1px solid #fff;
+}
+
+.dish{
+	margin-bottom:50px;
+}
+
+.dish-name{
+	font-size:18px;
+	border-bottom: 1px solid #fff;
+}
+
+.dish-price{
+	float:right;
+	margin-top:-18px;
+}
+
+.dish-description{
+	font-size:12px;
+	font-style:italic;
+}
+
+.menunote{
+	font-size:12px;
+	font-style:italic;
+}
+
+*/
+
+/* General desktop styles */
+
+@media only screen and (min-width:768px){
+		
+	.logo{
+			font-size:24px;
+	}
+	
+	
+	.nav-items li{
+		font-size:20px;
+		margin-left:20px;
+		padding:5px;
+	}
+	
+	.contactdetails{
+		font-size:18px;
+	}
+	
+	footer{
+		margin-top:20px;
+		font-size:16px;
+	}
+	
+	
+		/* courses page */
+	
+	.card{
+		box-sizing:border-box;
+		margin:10px;
+		max-width:25%;
+		width:auto;
+	}
+	
+	.cardwrapper{
+		flex-direction:row;
+	}
+	
+	/* home page */
+	
+	#large-image-content{
+		font-size:20px;
+	}
+	
+	#homepagebox{
+		box-sizing:border-box;
+		display:flex;
+		justify-content: space-between;
+	}
+	
+	.maincontainer{
+		margin:10px;
+	}
+	
+	/* menu page */
+	
+	.contentshortcuts li{
+		margin:auto;
+	}
+	
+	.menucontainer{
+		margin:auto;
+		width:50%;
+	}
+	
+	.dish-name{
+		border-bottom:none;
+	}
+	
+	/* contact page */
+	
+	form{
+		margin:auto;
+		width:50%;
+	}
+	
+	input[type=text], input[type=date]{
+		width:50%;
+	}
+	
+	/* about page */
+	
+	iframe{
+		margin:auto;
+	}
+	
+	/* .mapcontainer, .maincontainer{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	} */
+	
+	 .textcontent{
+		width:45%;
+	} 
+	
+	.pair{
+		width:45%;
+	}
+	
+	
+	
+	/* #textbox1, #textbox2, #textbox3{
+		width:50%;
+	} */
+	
+	.aboutwrapper{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+	}
+	
+}

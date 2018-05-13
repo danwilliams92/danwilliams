@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Pierre's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="back-to-main">
+			<a href="../portfolio.html">Back to Main Site</a>
+		</div>
+		<div class="navcontainer" id="navbar">
+			<div class="logo"><a href="index.html">Pierre's</a></div>
+			
+			<div class="nav-items">
+				<ul>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="contact.html">Contact</a></li> 
+					<li><a href="courses.html" class="current">Courses</a></li> 
+					<li><a href="aboutpage.html">About</a></li> 
+				</ul>
+			</div>
+		</div>
+	</header>
+	<h1 class="pageheading">Attend our Chef's Masterclasses</h1>
+		<!-- <h2 class="subheading">Seafood</h2>
+			<div class="maincontainer">
+				<img src="images/image8-large.jpg" alt="seafoodcourse">
+				<div class="textcontent">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+					Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+					Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+				</div>
+			</div>
+			
+			-->
+	<div class="cardwrapper">
+			<div class="card">
+				<img class="secondary-image" src="images/image8-large.jpg" alt="seafoodcourse"/>
+				<div class="cardcontent">
+				<span>Seafood course</span><br>
+				Learn the techniques involved in preparing seafood and attend a workshop in creating three seafood dishes<br>
+					<a href="javascript:toggle1()" class="button-link-alternate"><button class="buttonalternate" id="coursebutton1">More details</button></a>
+				</div>
+					<div class="moredetails" id="moreDetails1" style="display:none">
+						You will learn to prepare the following seafood dishes:
+						<ul class="courselist">
+							<li>Hot smoked salmon kedgeree</li>
+							<li>Devilled mackerel with mint and tomato salad</li>
+							<li>Baked crab with Berkswell cheese</li>
+							<li>Cullen skink</li>
+						</ul>
+						We will guide you through the following techniques:
+						<ul class="courselist">
+							<li>Hot-smoking salmon</li>
+							<li>Making a smoked fish soup</li>
+							<li>Filleting, skinning and grilling cod</li>
+							<li>Filleting and pin-boning a large round fish</li>
+						</ul>
+						The next date for our seafood course will be on:
+						<div class="coursedate">
+							29th Feb 2018*
+						</div>
+					</div>
+			</div>
+	
+
+		<div class="card">
+			<img class="secondary-image" src="images/image7-large.jpg" alt="pastrycourse"/>
+			<div class="cardcontent">
+				<span>Pastry and French Patisserie</span><br>
+				Learn the foundational types of pastry and fillings<br>
+			</div>
+				<a href="javascript:toggle2()" class="button-link-alternate"><button class="buttonalternate" id="coursebutton2">More details</button></a>
+				<div class="moredetails" id="moreDetails2" style="display:none">
+						You will learn to prepare the following pastry items:
+						<ul class="courselist">
+							<li>Mille-feuille</li>
+							<li>Croissant/Pain au chocolat</li>
+							<li>Framboisier</li>
+							<li>Saint honore</li>
+						</ul>
+						We will guide you through the following techniques:
+						<ul class="courselist">
+							<li>Laminated and enriched doughs</li>
+							<li>Flaky, choux and shortcrust pastry</li>
+							<li>Cream and fruit fillings</li>
+						</ul>
+						The next date for our patisserie course will be on:
+						<div class="coursedate">
+							2nd March 2018*
+						</div>
+				</div>
+		</div>
+		
+			
+		<div class="card">
+			<img class="secondary-image" src="images/image9-large.jpg" alt="breadmakingcourse"/>
+			<div class="cardcontent">
+				<span>Bread-making</span><br>
+				Master the techniques involved in bread-making and learn the bread-making process<br>
+			</div>
+				<a href="javascript:toggle3()" class="button-link-alternate"><button class="buttonalternate" id="coursebutton3">More details</button></a>
+				<div class="moredetails" id="moreDetails3" style="display:none">
+						You will learn to create and bake the following items:
+							<ul class="courselist">
+								<li>Sourdough loaf</li>
+								<li>Baguette</li>
+								<li>Braided loaf</li>
+								<li>Enriched loaves</li>
+							</ul>
+						We will guide you through the following techniques:
+							<ul class="courselist">
+								<li>Making and handling a sourdough starter</li>
+								<li>Handling high-hydration bread dough</li>
+								<li>The techniques fundamental to the bread-making process (kneading, shaping, prooving, fermenting etc.)</li>
+							</ul>
+						The next date for our bread-making course will be on:
+							<div class="coursedate">
+								5th March 2018*
+							</div>
+				</div>
+		</div>
+	</div>
+		<div class="coursenote">
+			* = To book your place on a course please call the restaurant, as availability changes daily.
+		</div>
+	
+	
+	
+	
+			<div class="socialmediabuttons">
+				<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+			</div>
+	
+	<div class="contactdetails">
+		<div class="boxitem"><i class="fa fa-phone"></i> 01633 888788</div>
+		<div class="boxitem"><i class="fa fa-envelope"></i> pierres@gmail.com</div>
+	</div>
+	
+	<footer>
+		<a href="#">About us |</a>
+		<a href="#">Contact us |</a>
+		<a href="#">Terms and conditions |</a>
+		<a href="#">Copyright |</a>
+	</footer>
+	
+	<script src="js/main.js"></script>
+	</body>
+	
+	</html>

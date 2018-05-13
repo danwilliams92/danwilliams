@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Pierre's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="back-to-main">
+			<a href="../portfolio.html">Back to Main Site</a>
+		</div>
+		<div class="navcontainer" id="navbar">
+			<div class="logo"><a href="index.html">Pierre's</a></div>
+			
+			<div class="nav-items">
+				<ul>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="contact.html">Contact</a></li> 
+					<li><a href="courses.html">Courses</a></li> 
+					<li><a href="aboutpage.html">About</a></li> 
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="homepage-wrapper">
+		<div class="maincontainer">
+			<img class="main-image" src="images/image2-large.jpg"/>
+			<div class="image-content">
+				Welcome to 
+				</br><span>Pierre's</span></br>
+				Voted </br>
+				"<em>World's Best Restaurant 2017</em>"</br>
+				by Everyone
+				<a href="contact.html" class="button-link"><button class="button">Book a table</button></a>
+			</div>
+		</div>
+		<div class="maincontainer">
+			<img class="main-image" src="images/image4-large.jpg" alt="plateoffood"/>
+			<div class="image-content">
+				View our seasonal menu, offering all <em>locally-sourced</em> food
+				<a href="menu.html" class="button-link"><button class="button">View menu</button></a>
+			</div>
+		</div>
+		<div class="maincontainer">
+			<img class="main-image" src="images/image3-large.jpeg">
+			<div class="image-content">
+				Learn from our chefs at
+				Pierre's Cookery School
+				<a href="courses.html" class="button-link"><button class="button">View Courses</button></a>
+			</div>
+		</div>
+		<div class="maincontainer">
+			<img class="main-image" src="images/image1-large.jpeg">
+			<div class="image-content">
+				Find out where we are, and where we came from
+				<a href="aboutpage.html" class="button-link"><button class="button">About us</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="socialmediabuttons">
+	<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	</div>
+	
+	<div class="contactdetails">
+		<div class="boxitem"><i class="fa fa-phone"></i> 01633 888788</div>
+		<div class="boxitem"><i class="fa fa-envelope"></i> pierres@gmail.com</div>
+	</div>
+	
+	<footer>
+		<a href="#">About us |</a>
+		<a href="#">Contact us |</a>
+		<a href="#">Terms and conditions |</a>
+		<a href="#">Copyright |</a>
+	</footer>
+
+
+<script src="js/main.js"></script>
+</body>

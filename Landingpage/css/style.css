@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Lora:400i');
+
+
+body{
+	font-family: 'Cormorant', sans-serif;
+}
+
+/* navigate back to portfolio page */
+
+.back-to-main{
+		width:100vw;
+		text-align:center;
+		background-color:#B8B7B7;
+}
+
+.back-to-main a {
+	color:#fff;
+	text-decoration:none;
+	font-size:1.5em;
+}
+
+/* end */
+
+span#main-brand{
+	color:#E3DB2D;
+}
+
+span#headline{
+	font-weight:700;
+
+}
+
+#nav-bar{
+	background-color:#449B48;
+	
+}
+
+#nav-bar a{
+	color:#fff;
+}
+
+#nav-bar a:hover{
+	color:#4CAF50;
+}
+
+.contact-info {
+	color:#fff;
+}
+
+.contact-info i{
+	padding:5px;
+}
+
+#main-box{
+	background-image: url('../images/image2.jpg');
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+	color:#fff;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+}
+
+
+#booking-button{
+	border:1px solid #4CAF50;
+	color:#fff;
+	background-color:#4CAF50;
+	border-radius:12px;
+	font-size:25px;
+	padding:14px 40px;
+}
+
+
+#booking-button:hover {
+	background-color:#fff;
+	color:#4CAF50;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transition:0.5s;
+}
+
+#modal{
+	border:none;
+	padding:10px;
+	border-radius:6px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+	left:0;
+    top:0;
+    z-index: 1; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+	height:100%;
+	width:100%;
+	margin:auto;
+
+}
+
+#modal-form{
+	height:50%;
+	width:50%;
+	position:fixed;
+	left:25%;
+	top:10%;
+}
+
+#modal-form label{
+	color:#fff;
+}
+
+span#close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	margin-bottom:15px;
+}
+
+span#close:hover{
+	cursor:pointer;
+	color:#4CAF50;
+}
+
+#main-box-button{
+	width:100%;
+}
+
+p{
+	color:#636363;
+}
+
+#second-box{
+	/* background-color:#659DBD; */
+	background-color:#4CAF50;
+	color:#fff;
+}
+
+#second-box p{
+	color:#fff;
+}
+
+
+p.testimony-quote::before {
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+	top: -15px;
+    color: #7a7a7a;
+	margin-top:20px;
+}
+
+p.testimony-quote{
+	font-family: 'Lora', serif;
+}
+
+#fifth-box{
+	background-color:#4CAF50;
+	color:#000;
+	font-family: 'Lora', sans-serif;
+}
+
+#fifth-box ul{
+	list-style-type:none;
+}
+
+#fifth-box li{
+	color:#636363;
+}
+
+#fifth-box h1{
+	color:#fff;
+	font-family: 'Cormorant', sans-serif;
+	
+}
+
+
+.price-box{
+	border:1px solid #fff;
+	padding:0;
+	margin:5px;
+	background-color:#fff;
+	box-shadow: 10px 11px 15px -5px rgba(0,0,0,0.75);
+	transition:0.5s;
+}
+
+.price-box:hover{
+	box-shadow: 10px 11px 15px 2px rgba(0,0,0,0.75);
+	transition:0.5s;
+
+}
+
+
+#price-box-2{
+	border:5px solid #D7CF2A;
+}
+
+span.cost{
+	color: #4CAF50;
+	font-weight:700;
+}
+
+
+.page-footer{
+		margin-top:25px;
+		background-color:#4CAF50;
+}
+
+
+.footer-list{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.footer-list li{
+	list-style-type:none;
+	margin:5px;
+	padding:5px;
+}
+
+.footer-list a{
+	text-decoration:none;
+	color:#fff;
+}

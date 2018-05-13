@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Pierre's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="back-to-main">
+			<a href="../portfolio.html">Back to Main Site</a>
+		</div>
+		<div class="navcontainer" id="navbar">
+			<div class="logo"><a href="index.html">Pierre's</a></div>
+			
+			<div class="nav-items">
+				<ul>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="contact.html">Contact</a></li> 
+					<li><a href="courses.html">Courses</a></li> 
+					<li><a href="aboutpage.html" class="current">About</a></li> 
+				</ul>
+			</div>
+		</div>
+	</header>
+	<h1 class="pageheading">About Pierre's</h1>
+		<div class="aboutwrapper">
+			<div class="pair">
+				<h2 class="subheading">How to find us</h2>
+				<div class="restaurantmap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.106926356141!2d-0.15735568422989327!3d51.511254279635715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760454dfb7f8ed%3A0xc81d8b3fcda009ba!2sLe+Gavroche!5e0!3m2!1sen!2suk!4v1515586374782" 
+				width="400" height="300" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="textcontent">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+			Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+				<h2 class="subheading">Opening Hours:</h2>
+				<ul id="openinghourslist">
+					<li>Mon-Sat: 12pm - 2pm, 6pm - 11pm</li>
+					<li>Sun: 12pm - 3pm, 6pm-10pm</li>
+				</ul>
+			</div>
+		</div>
+		<div class="aboutwrapper">
+			<div class="pair">
+				<h2 class="subheading">About Pierre</h2>
+					<div class="maincontainer">
+					<img src="images/image6-large.jpg" alt="pierrecooking"/>
+			</div>
+			</div>
+			<div class="textcontent">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+				Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+				Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+			</div>
+		</div>
+		<div class="aboutwrapper">
+			<div class="pair">
+				<h2 class="subheading">Our Humble Beginnings</h2>
+				<div class="maincontainer">
+					<img src="images/image5-large.jpg" alt="pierresbeforeafter"/>
+			</div>
+			</div>
+			<div class="textcontent">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+				Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+				Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+			</div>
+		</div>
+		
+		
+		<div class="socialmediabuttons">
+	<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	</div>
+	
+	<div class="contactdetails">
+		<div class="boxitem"><i class="fa fa-phone"></i> 01633 888788</div>
+		<div class="boxitem"><i class="fa fa-envelope"></i> pierres@gmail.com</div>
+	</div>
+	
+	<footer>
+		<a href="#">About us |</a>
+		<a href="#">Contact us |</a>
+		<a href="#">Terms and conditions |</a>
+		<a href="#">Copyright |</a>
+	</footer>
+	<script src="js/main.js"></script>
+	</body>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to Pierre's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="back-to-main">
+			<a href="../portfolio.html">Back to Main Site</a>
+		</div>
+		<div class="navcontainer" id="navbar">
+			<div class="logo"><a href="index.html">Pierre's</a></div>
+			
+			<div class="nav-items">
+				<ul>
+					<li><a href="menu.html" class="current">Menu</a></li> 
+					<li><a href="contact.html">Contact</a></li> 
+					<li><a href="courses.html">Courses</a></li> 
+					<li><a href="aboutpage.html">About</a></li> 
+				</ul>
+			</div>
+		</div>
+	</header>
+<div id="menupagecontainer">
+	<h1 class="pageheading">Our Menu</h1>
+	
+	
+	<!-- Tab links -->
+	<div class="menucontainer">
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')">Set Lunch</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">A la Carte</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">Wine</button>
+		</div>
+		<div class="tabwrapper">
+			<!-- Tab content -->
+			<div id="London" class="tabcontent">
+			  <h3 class="menuheader">Set Lunch</h3>
+			  <h4>£25 for Two Courses</h4>
+			  <h4>£35 for Three Courses</h4>
+			  <ul class="menu-list">
+				<div class="course-group">
+					<li>Deep fried plaice with Thai chilli dip</li> 
+					<li>Pork cromesqui and black pudding with madeira jus</li>
+				</div>
+				<div class="course-group">
+					<li>Hake with octopus, potato and red pepper ragout</li>
+					<li>Partridge with jabron potatoes and herb stuffing</li>
+				</div>
+				<div class="course-group">
+					<li>Pistachio cake with raspberries and rosewater ice cream</li>
+					<li>Vanilla cheesecake with caramelised oranges and praline ice cream</li>
+				</div>
+			  </ul>
+			</div>
+
+			<div id="Paris" class="tabcontent">
+			  <h3 class="menuheader">A la Carte</h3>
+			  <h4>£28 for Two Courses</h4>
+			  <h4>£38 for Three Courses</h4>
+			  <h4 class="menusubheader">Starters</h4>
+				<ul class="carte-menu-list">
+					<div class="course-group">
+						<li>Provençal Style Fish Soup with Rouille, Croutons and Gruyere Cheese</li>
+						<li>Pappa al Pomodoro Tuscan Style Thick Tomato & Bread Soup with Basil</li>
+						<li>Deep Fried Pork Belly & Black Pudding with Pickled Fennel, Apple & Mustard Sauce</li>
+						<li>Braised Puntarelle & Tomato Bruschetta with Buffalo Mozzarella and Rocket</li>
+					</div>
+				</ul>
+			  <h4 class="menusubheader">Main Course</h4>
+				<ul class="carte-menu-list">
+					<div class="course-group">
+						<li>Slow Roasted Local Pedigree Pork Shoulder with Apple Sauce, Crackling, Roast Potatoes, Seasonal Vegeatables and Gravy</li>
+						<li>Warm Poached Salmon with Mashed Potato, Grilled Purple Sprouting Broccoli, Watercress Veloute and Horseradish Crème Fraiche</li>
+						<li>Chicken, Ham and Leek Pie with Skinny Fries</li>
+					</div>
+				</ul>
+			   <h4 class="menusubheader">Dessert</h4>
+				<ul class="carte-menu-list">
+					<div class="course-group">
+						<li>Vanilla Pannacotta with New Season Blood Orange with Honey Aperol</li>
+						<li>Affogato - Espresso Coffee over Vanilla Ice Cream</li>
+						<li>Coffee and Tea with Petit Fours</li>
+					</div>
+				</ul>
+			</div>
+
+			<div id="Tokyo" class="tabcontent">
+			  <h3 class="menuheader">Wine</h3>
+			  <h4 class="menusubheader">Sparkling</h4>
+				<ul class="wine-list">
+					<div class="course-group">
+						<li><span class="beverage">Prosecco</span> - Italy</li>
+						<li><span class="beverage">Mercier Brut NV</span> - France</li>
+						<li><span class="beverage">Dom Perignon Vintage</span> - France</li>
+					</div>
+				</ul>
+				<h4 class="menusubheader">Red</h4>
+				<ul class="wine-list">
+					<div class="course-group">
+						<li><span class="beverage">Shiraz Billi Billi</span> - Australia</li>
+						<li><span class="beverage">Grand Vin Chateau D'Angles</span> - France</li>
+						<li><span class="beverage">Rioja Tondeluna</span> - Spain</li>
+					</div>
+				</ul>
+				<h4 class="menusubheader">White</h4>
+				<ul class="wine-list">
+					<div class="course-group">
+						<li><span class="beverage">Sauvignon Blanc Dog Point</span> - New Zealand</li>
+						<li><span class="beverage">Pinot Grigiot Lacento</span> - Italy</li>
+						<li><span class="beverage">Chablis Jean-Marc Brocard</span> - France</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<img class="menuimage" src="images/image10.jpeg"/>
+	</div>
+</div>
+	<div class="socialmediabuttons">
+	<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	</div>
+	
+	<div class="contactdetails">
+		<div class="boxitem"><i class="fa fa-phone"></i> 01633 888788</div>
+		<div class="boxitem"><i class="fa fa-envelope"></i> pierres@gmail.com</div>
+	</div>
+	
+	<footer>
+		<a href="#">About us |</a>
+		<a href="#">Contact us |</a>
+		<a href="#">Terms and conditions |</a>
+		<a href="#">Copyright |</a>
+	</footer>
+
+
+<script src="js/main.js"></script>
+</body>
