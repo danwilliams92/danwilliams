@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap portfolio site</title>
+    <link rel="Stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="JS/main.js"></script>
+	</head>
+	<body>
+	
+	<nav class="container-fluid">
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="d-flex flex-column align-content-center justify-content-center mt-4">
+		<a href="index.html">Home</a>
+		<a href="about.html" class="active">About</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+		</div>
+		</div>
+	</nav>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+		<div class="container-fluid">
+			<header class="d-flex justify-content-start mb-4">
+				<div class="sidemenubutton">
+					<button id="menubutton" onclick="openNav()">Menu</button>
+				</div>
+				
+				<!--
+				<div id="socialmediabuttons">
+					<a href="#" class="socialmediabutton"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="socialmediabutton"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://github.com/danwilliams92" target="_blank" class="socialmediabutton"><i class="fa fa-github fa-2x"></i></a>
+				</div>
+				
+				-->
+			</header>
+		</div>
+		<div class="container-fluid first-box">
+			<h2 class="secondary-header text-center mb-4">About Me</h2>
+			<div class="row justify-content-center">
+				<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+					<p class="p-2">So I'm based in South Wales, not too far from Cardiff.<br>
+						I have a Bachelor's Degree in Music (I'm a classical guitarist by trade), and initially wanted to teach privately after University.
+							I wanted my own professional website to get more clients, but couldn't afford to pay for one - so I decided to teach myself.
+						After seeing how awesome and rewarding it was to build your own website however, I changed my career focus entirely and now want to use my time and skill to work on Web Development!
+					</p>
+					<p class="p-2">
+						I only started to learn about six months ago, and because I work full-time AND am a father to two naughty kids, I do not have an abundance of time to learn and work on projects.
+						However, I am fairly happy with the progress I have made so far, all things considered, and I am keen to learn as much as I can.
+					</p>
+				</div>
+			</div>
+			
+			<h2 class="secondary-header text-center mb-4">Core skills</h2>
+			<div class="row justify-content-center" id="core-skills-container">
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center">
+					<h5>Comfortable with:</h5>
+					<ul class="list-group skills-list my-3">
+						<li class="list-group-item">HTML 5</li>
+						<li class="list-group-item">CSS 3</li>
+						<li class="list-group-item">JavaScript</li>
+						<li class="list-group-item">jQuery</li>
+						<li class="list-group-item">Bootstrap 4</li>
+						<li class="list-group-item">Responsive Design</li>
+					</ul>
+				</div>
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center">
+				<h5>Currently learning:</h5>
+					<ul class="list-group skills-list my-3">
+						<li class="list-group-item">JSON/AJAX</li>
+						<li class="list-group-item">SCSS</li>
+						<li class="list-group-item">PHP</li>
+						<li class="list-group-item">JavaScript ES6 Syntax</li>
+					</ul>
+				</div>
+			</div>
+			
+			<h2 class="secondary-header text-center mb-4">Work Process</h2>
+			<div class="row justify-content-center">
+				<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+					<p class="p-2">Although my work so far has only manifested in the form of projects (as opposed to real-world websites made for clients), I still try to take methodical steps in the process.</p> 
+					I follow these guidelines when working on my projects:
+						<ul class="list-group" id="process-list">
+							<li><span class="font-weight-bold">Gather information</span>. Decide what product or service the website wants to offer, who their target audience(s) is/are, and how I can model the website towards these people</li>
+							<li><span class="font-weight-bold">Look to other functioning websites</span> that are offering a similar service - see what they have going for them and what they're missing or could be doing better (that I could use in my website)</li>
+							<li><span class="font-weight-bold">Produce physical sketches</span> of how I could present and organise the website in desktop, mobile and tablet formats. Make a note of what features they might use.</li>
+							<li>Get together suitable, good-quality <span class="font-weight-bold">images</span> for the website; select an appropriate <span class="font-weight-bold">typography and colour scheme</span>, as well as appropriate icons if needed</li>
+							<li>Produce the <span class="font-weight-bold">markup, styling</span> and <span class="font-weight-bold">javascript</span> for the website</li>
+							<li><span class="font-weight-bold">Test</span> the appearance and functionality of the website on <span class="font-weight-bold">various browsers</span> and <span class="font-weight-bold">device dimensions</span>. Ask myself if I can make changes to <span class="font-weight-bold">improve</span> the user's experience</li>
+						</ul>
+				</div>
+			</div>
+			
+			<h2 class="secondary-header text-center mb-4">Future</h2>
+			<div class="row justify-content-center">
+				<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+				<p class="p-2">Over the next year, I'd love to work as a Web Developer full-time!<br>
+				I want to gain a stronger understanding of vanilla Javascript, more PHP knowledge, a better understanding of Git and the Command Line, possibly a CMS (viz. WordPress), and after that perhaps a JS framework/library such as React.
+				For the meantime however I don't want to rush in to the newest shiny technology without being confident with the fundamentals (which I think is wise, right?).
+				</p>
+				<p class="p-2">Long-term, I'd like to be working on large-scale websites and web applications as part of a team - but I'll think about that after I've found my feet as a junior developer.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+	</html>

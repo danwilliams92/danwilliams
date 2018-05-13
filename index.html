@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap portfolio site</title>
+    <link rel="Stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="JS/main.js"></script>
+	</head>
+	<body>
+	
+	<nav class="container-fluid">
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+		<div class="d-flex flex-column align-content-center justify-content-center mt-4">
+		<a href="index.html" class="active">Home</a>
+		<a href="about.html">About</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+		</div>
+		</div>
+	</nav>
+
+ <!-- <span onclick="openNav()"><button class="menubutton">Menu</button></span> -->
+
+	<div id="main">
+		<div class="container-fluid">
+			<header class="d-flex justify-content-end mb-4">
+				<div class="sidemenubutton">
+					<button id="menubutton" onclick="openNav()">Menu</button>
+				</div>
+				
+				<!--
+				<div id="socialmediabuttons">
+					<a href="#" class="socialmediabutton"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="socialmediabutton"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://github.com/danwilliams92" target="_blank" class="socialmediabutton"><i class="fa fa-github fa-2x"></i></a>
+				</div>
+				
+				-->
+			</header>
+		</div>
+		<div class="container-fluid" id="first-box">
+		
+
+			<div class="row justify-content-center" id="myface">
+					<img class="img-fluid rounded-circle" src="images/image2.jpg" />
+			</div>
+			<div id="opening-headline">
+				<div class="row justify-content-center">
+						<h1>Hi, I'm Dan.</h1> 
+				</div>
+				<div class="row justify-content-center">
+						<h4>I'm a self-taught Web Developer, and I design and build the front-end of websites.</h4>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center mt-4">
+				<a href="portfolio.html" id="homepage-button">View Portfolio</a>
+			</div>
+			
+			<!--
+			<div class="row">
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					
+					<p></p>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+	</html>

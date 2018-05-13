@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap portfolio site</title>
+    <link rel="Stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="JS/main.js"></script>
+	</head>
+	<body>
+	
+	<nav class="container-fluid">
+		<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="d-flex flex-column align-content-center justify-content-center mt-4">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="portfolio.html" class="active">Portfolio</a>
+		<a href="contact.html">Contact</a>
+		</div>
+		</div>
+	</nav>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+		<div class="container-fluid">
+			<header class="d-flex justify-content-start mb-4">
+				<div class="sidemenubutton">
+					<button id="menubutton" onclick="openNav()">Menu</button>
+				</div>
+				
+				<!--
+				<div id="socialmediabuttons">
+					<a href="#" class="socialmediabutton"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#" class="socialmediabutton"><i class="fa fa-instagram fa-2x"></i></a>
+					<a href="https://github.com/danwilliams92" target="_blank" class="socialmediabutton"><i class="fa fa-github fa-2x"></i></a>
+				</div>
+				
+				-->
+			</header>
+		</div>
+		<div class="container-fluid">
+			<h2 class="secondary-header text-center">My Work So Far</h2>
+			
+			<div class="row justify-content-center p-4 my-4">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<a href="landingpage/index.html"><img class="img-fluid" src="images/portfolio1.jpg"></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 portfolio-text">
+					<h4 class="portfolio-header">Landing Page</h5>
+					<p>Here I designed a responsive landing page for a fictional holiday business using Bootstrap 4 and a little bit of JavaScript. It has several sections, and a call-to-action that brings up a modal contact form (which in this case is front-end-only, so don't be disappointed if you fill in the form and nothing happens!).</p>
+					<br>
+					<a href="landingpage/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center p-4 my-4">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-md-12 order-lg-12 order-xl-12">
+					<a href="Restaurantproject/index.html"><img class="img-fluid" src="images/portfolio2.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-md-1 order-lg-1 order-xl-1 portfolio-text">
+					<h4 class="portfolio-header">Restaurant Website</h5>
+					<p>In this project I designed a mobile-first website for a fictional French restaurant, using CSS3 and some JavaScript for functionality. Minus the contact page, I tried to make this work as a real small-scale restaurant website would. For the layout I used Flexbox: at the time I read mixed things about browser support for CSS Grid, so I played it safe and used Flex. </p>
+					<br>
+					<a href="Restaurantproject/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center p-4 my-4">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<a href="todolist/index.html"><img class="img-fluid" src="images/portfolio3.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 portfolio-text">
+					<h4 class="portfolio-header">To-do List</h5>
+					<p>This is a to-do list I made using plain JavaScript. The user can input a 'to-do' item, toggle whether the task has been completed, and remove the task from the list afterwards. I am in the process of adding additional features to this project, so watch this space!</p>
+					<br>
+					<a href="todolist/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center p-4 my-4">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-md-12 order-lg-12 order-xl-12">
+					<a href="weatherapp/index.html"><img class="img-fluid" src="images/portfolio3.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 order-md-1 order-lg-1 order-xl-1 portfolio-text">
+					<h4 class="portfolio-header">Current Weather App</h5>
+						<p>In this project I use jQuery and AJAX to access the Openweathermap API. The user can get weather data either for a particular city, or for their current location (which is achieved through Geocode).</p>
+						<p>This is my first project that uses API calls, and I have much more to learn, however this was still a rewarding project!</p>
+						<br>
+						<a href="weatherapp/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+				</div>
+			</div>
+			
+			
+			
+			
+			<!--
+			<div class="row justify-content-center my-4">
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="card">
+					  <img class="card-img-top" src="images/portfolio1.jpg" alt="Card image cap 1">
+					  <div class="card-body portfolio-card">
+						<h5 class="card-title">Landing page</h5>
+						<p class="card-text">Here I designed a responsive landing page for a fictional holiday business using Bootstrap 4 and a little bit of JavaScript.</p>
+						<a href="landingpage/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="card">
+					  <img class="card-img-top" src="images/portfolio2.png" alt="Card image cap 2">
+					  <div class="card-body portfolio-card">
+						<h5 class="card-title">Restaurant Website</h5>
+						<p class="card-text">For this project I designed a mobile-first website for a fictional French restaurant, using CSS3 and some JavaScript for functionality.</p>
+						<a href="Restaurantproject/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="card">
+					  <img class="card-img-top" src="images/portfolio3.png" alt="Card image cap 3">
+					  <div class="card-body portfolio-card">
+						<h5 class="card-title">To-do List</h5>
+						<p class="card-text">This is a to-do list I made using plain JavaScript. The user can input a 'to-do' item, toggle whether the task has been completed, and remove the task from the list afterwards.</p>
+						<a href="todolist/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+					  </div>
+					</div>
+				</div>
+					<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="card">
+					  <img class="card-img-top" src="images/portfolio4.jpg" alt="Card image cap 4">
+					  <div class="card-body portfolio-card">
+						<h5 class="card-title">Current Weather App</h5>
+						<p class="card-text">In this project I use jQuery and AJAX to access the Openweathermap API. The user can get weather data either for a particular city, or for their current location (which is achieved through Geocode).</p>
+						<p class="card-text">This is my first project that uses API calls, and I have much more to learn, however this was still a rewarding project!</p>
+						<a href="weatherapp/index.html" class="btn btn-primary portfolio-button">Live Preview</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+	
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+	</html>
