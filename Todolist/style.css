@@ -134,3 +134,14 @@ input {
 .title{
 	font-family: 'Cormorant Garamond', serif;
 }
+
+
+.success{
+    color:green;
+    font-size:25px;
+}
+
+.warning{
+    color:red;
+    font-size:25px;
+}
