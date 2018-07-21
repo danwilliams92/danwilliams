@@ -4,77 +4,66 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap portfolio site</title>
-    <link rel="Stylesheet" href="css/style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Form Validation</title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="JS/main.js"></script>
 	</head>
 	<body>
-	
-	<nav class="container-fluid">
-		<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
-		<div class="d-flex flex-column align-content-center justify-content-center mt-4">
-		<a href="index.html" class="active">Home</a>
-		<a href="about.html">About</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="contact.html">Contact</a>
-		</div>
-		</div>
-	</nav>
+        <main>
+            <div class="d-flex justify-content-center align-items-center" id="main">
+                <form name="registerForm" id="myForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <div class="form-group">
+                        <label for="name-input">Name</label>
+                        <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                    </div>
 
- <!-- <span onclick="openNav()"><button class="menubutton">Menu</button></span> -->
+                    <div class="bg-danger text-white error-message" id="name-error"></div>
+                    
+                    <div class="form-group">
+                        <label for="email-input">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
 
-	<div id="main">
-		<div class="container-fluid">
-			<header class="d-flex justify-content-end mb-4">
-				<div class="sidemenubutton">
-					<button id="menubutton" onclick="openNav()">Menu</button>
-				</div>
-				
-				<!--
-				<div id="socialmediabuttons">
-					<a href="#" class="socialmediabutton"><i class="fa fa-facebook fa-2x"></i></a>
-					<a href="#" class="socialmediabutton"><i class="fa fa-instagram fa-2x"></i></a>
-					<a href="https://github.com/danwilliams92" target="_blank" class="socialmediabutton"><i class="fa fa-github fa-2x"></i></a>
-				</div>
-				
-				-->
-			</header>
-		</div>
-		<div class="container-fluid" id="first-box">
-		
+                    <div class="bg-danger text-white error-message" id="email-error"></div>
+                    
+                    <div class="form-group">
+                            <label for="age-input">Age*</label>
+                            <input type="age" class="form-control" id="age" aria-describedby="ageHelp" placeholder="Enter age">
+                            <p class="font-italic">*Please note that you must be 18 or over to sign up with us!</p>
+                    </div>
 
-			<div class="row justify-content-center" id="myface">
-					<img class="img-fluid rounded-circle" src="images/image2.jpg" />
-			</div>
-			<div id="opening-headline">
-				<div class="row justify-content-center">
-						<h1>Hi, I'm Dan.</h1> 
-				</div>
-				<div class="row justify-content-center">
-						<h4>I'm a self-taught Web Developer, and I design and build the front-end of websites.</h4>
-				</div>
-			</div>
-			
-			<div class="row justify-content-center mt-4">
-				<a href="portfolio.html" id="homepage-button">View Portfolio</a>
-			</div>
-			
-			<!--
-			<div class="row">
-				<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-					
-					<p></p>
-				</div>
-			</div>
-			-->
-		</div>
-	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
-	</html>
+                    <div class="bg-danger text-white error-message" id="age-error"></div>
+                    <div class="bg-danger text-white error-message" id="underage-error"></div>
+
+
+                    
+
+                    <div class="form-group">
+                        <label for="password-input">Password*</label>
+                        <input type="password" class="form-control" id="password" placeholder="Choose a Password">
+                        <p class="font-italic">*Your password must contain at least one number, one uppercase letter and six or more characters.</p>
+                    </div>
+
+                    <div class="bg-danger text-white error-message" id="password-error"></div>
+
+                    <div class="form-group">
+                            <label for="password-check">Retype Password</label>
+                            <input type="password" class="form-control" id="password-retype" placeholder="Please retype your password">
+                    </div>
+
+                    <div class="bg-danger text-white error-message" id="password-retype-error"></div>
+
+                    <div class="bg-success text-white error-message" id="form-success-message"></div>
+
+                    <button type="submit" id="submit-button" class="btn btn-primary col-12 my-2">Submit</button>
+                </form>
+            </div>
+        </main>
+    
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+    </html>
