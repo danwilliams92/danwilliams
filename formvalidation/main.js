@@ -77,7 +77,6 @@ function validate(e){
     if(passwordRetype.value !== password.value){
         document.querySelector('#password-retype-error').innerHTML = "Oops, this doesn't match your password";
         passwordRetype.focus();
-        //myForm.reset();
         return false;
     }
 
@@ -98,7 +97,7 @@ function validate(e){
        div.className = 'd-flex justify-content-between p-2 my-2 bg-success text-white rounded mx-auto';
        const fontSize = document.createElement('h3');
        const check = document.createElement('i');
-       check.className = 'far fa-check-circle';
+       check.className = 'ml-2 far fa-check-circle';
        div.appendChild(fontSize);
 
        fontSize.appendChild(document.createTextNode('Registration successful! Thanks a bunch!'));
@@ -111,5 +110,5 @@ function validate(e){
         myForm.reset();
        }, 3000);
 
-    }    
+    }        
 }
